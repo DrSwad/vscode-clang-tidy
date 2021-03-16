@@ -44,6 +44,7 @@ function clangTidyArgs(files: string[], fixErrors: boolean) {
 
     if (fixErrors) {
         args.push("--fix");
+        args.push("--fix-errors");
     }
 
     return args;
